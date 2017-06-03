@@ -42,6 +42,7 @@ import LoginRegister from './LoginRegister.jsx';
 import UpdateDocs from './UpdateDocs.jsx';
 import MyAccount from './MyAccount.jsx';
 import About from './About.jsx';
+import ApproveDocs from './ApproveDocs.jsx'
 
 const pathToBG = require('../img/background.jpeg');
 
