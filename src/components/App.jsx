@@ -340,7 +340,7 @@ export default class App extends React.Component {
         this.setState({
             screen: <AddResource container={this.refs.content}
                                  addResource={(x) => this.addResource(x)}
-                                 displaySearch={()=>this.displaySearch}/>
+                                 displaySearch={()=>this.displaySearch()}/>
         });
 
     }

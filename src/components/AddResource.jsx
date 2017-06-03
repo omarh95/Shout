@@ -195,6 +195,7 @@ export default class AddResource extends React.Component {
 
         const { customError, wordsError, numericError, urlError } = this.errorMessages;
         const { addResource, displaySearch} = this.props;
+        this.displaySearch = displaySearch;
 
         const { offsetWidth, offsetHeight} = this.state;
         if (offsetHeight === undefined) {
@@ -522,7 +523,7 @@ export default class AddResource extends React.Component {
                     keyboardFocused={true}
                     onTouchTap={() => {
                                         this.setState({completedOpen: false});
-                                        displaySearch();
+                                        this.displaySearch();
                                         }}/>}
                     modal={false}
                     open={this.state.completedOpen}
